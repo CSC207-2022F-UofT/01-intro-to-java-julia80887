@@ -40,9 +40,7 @@ public class Basics {
          */
         System.out.println(7 + 5);
 
-        /* TODO (Task 1): Write a line of code below that prints the string
-         *                Hello World!
-         */
+        System.out.println("Hello World!");
 
 
 
@@ -58,10 +56,7 @@ public class Basics {
          *    (Relevant reading: 1.2. Variables and Types)
          */
 
-        /*
-         * TODO (Task 2): Create a variable named my_variable and assign it the
-         *                value 100.
-         */
+        int my_variable = 100;
 
 
 
@@ -87,19 +82,9 @@ public class Basics {
          *    (Relevant reading: 1.8.2. for Loops)
          */
 
-        /*
-         * TODO (Task 3): Create a for-loop that loops from 10 to 0, printing
-         *                the following at each iteration:
-         *                Current count: #
-         *
-         * e.g. the end result should look like:
-         * Current count: 10
-         * Current count: 9
-         *     ...
-         * Current count: 1
-         * Current count: 0
-         */
-
+        for (int i = 10; i >= 1; i--) {
+            System.out.println("Current count: " + i);
+        }
 
     }
 
@@ -141,9 +126,20 @@ public class Basics {
          *                you may use them if you wish.
          */
         StringBuilder ret = new StringBuilder();
+        String[] string_array;
+
+        string_array = to_split.split(" ");
+
+        ret.append(string_array[0].charAt(0));
+        ret.append(string_array[1].charAt(0));
+        ret.append(string_array[2].charAt(0));
+        ret.append(string_array[3].charAt(0));
+        ret.append(string_array[4].charAt(0));
+        ret.append(string_array[5].charAt(0));
+        ret.append(string_array[6].charAt(0));
+
 
         // Fill in the rest of the body here
-
         return ret.toString();
     }
 
@@ -170,6 +166,12 @@ public class Basics {
          *                You can index into arrays as we do in Python
          *                (e.g. arr[i] gives you the item at index i).
          */
+
+        int length = arr.length;
+
+        for (int i = 1; i < length; i++) {
+            current_sum += arr[i];
+        }
 
         return current_sum;
     }
