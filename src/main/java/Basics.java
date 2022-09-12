@@ -82,7 +82,7 @@ public class Basics {
          *    (Relevant reading: 1.8.2. for Loops)
          */
 
-        for (int i = 10; i >= 1; i-= 1) {
+        for (int i = 10; i >= 0; i--) {
             System.out.println("Current count: " + i);
         }
 
@@ -167,9 +167,8 @@ public class Basics {
          *                (e.g. arr[i] gives you the item at index i).
          */
 
-        int length = arr.length;
 
-        for (int i = 1; i < length; i += 1) {
+        for (int i = 1; i < arr.length; i = i + 2) {
             current_sum += arr[i];
         }
 
