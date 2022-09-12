@@ -82,7 +82,7 @@ public class Basics {
          *    (Relevant reading: 1.8.2. for Loops)
          */
 
-        for (int i = 10; i >= 1; i--) {
+        for (int i = 10; i >= 1; i-= 1) {
             System.out.println("Current count: " + i);
         }
 
@@ -169,7 +169,7 @@ public class Basics {
 
         int length = arr.length;
 
-        for (int i = 1; i < length; i++) {
+        for (int i = 1; i < length; i += 1) {
             current_sum += arr[i];
         }
 
